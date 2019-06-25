@@ -1,0 +1,21 @@
+<!--pages/search/search.wxml-->
+<scroll-view 
+  class='contant-main' 
+  scroll-y
+  bindscrolltolower='sLoadMore'
+  scroll-top="{{scrollTop}}"
+>
+  <navigator
+    class='list-item'
+    url="/pages/detail/detail?id={{item.id}}"
+    wx:for="{{sLists}}"
+    wx:key="{{item.id}}"
+  >
+    <image class="list-img" src='{{item.image}}'></image>
+    <view class="presentation">
+        <view class="title">{{item.title}}</view>
+        <view class="price">￥{{item.price}}元</view>
+    </view>
+  </navigator>
+  <view class='end' wx:if="{{isEnd}}" >哎呀！没有了</view>
+</scroll-view>

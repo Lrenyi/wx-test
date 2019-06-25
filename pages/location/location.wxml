@@ -1,0 +1,12 @@
+<!--pages/location/location.wxml-->
+<view style='height:60px;line-height:60px;text-align:center'>地理信息</view>
+<map
+  id="map"
+  latitude="30.623632"
+  longitude="104.076424"
+  scale="15"
+  markers="{{markers}}"
+  bindmarkertap="markertap"
+  show-location
+  style="width: 100%; height: 350px"
+></map>

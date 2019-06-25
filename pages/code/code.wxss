@@ -1,0 +1,15 @@
+/* pages/code/code.wxss */
+page{
+  background: #faf5f5
+}
+.code{
+  margin: 200px 0;
+}
+.code-btn{
+  width:600rpx;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 75rpx;
+  font-size: 14px;
+  color:#f75a5a
+}

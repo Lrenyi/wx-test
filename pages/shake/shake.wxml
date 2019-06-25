@@ -1,0 +1,4 @@
+<!--pages/shake/shake.wxml-->
+<view class="shake">
+  <button class="shake-btn" catchtap='startShake'>摇一摇</button>
+</view>

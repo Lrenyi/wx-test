@@ -1,0 +1,21 @@
+<!--pages/photo/photo.wxml-->
+<view class="photo">
+  <button class="photo-btn" wx:if="{{!isCameraOn && !status}}" bindtap='turnOnCamera'>打开摄像头</button>
+</view>
+<view wx:if="{{isCameraOn}}">
+  <camera
+    device-position='back'
+    style='width: 600rpx; height: 300px;margin:75rpx;'
+  ></camera>
+  <view style='display:flex;'>
+    <button catchtap='takePhoto'>拍照</button>
+    <button bindtap='turnOffCamera'>退出</button>
+  </view>
+</view>
+<view wx:if="{{!isCameraOn && photo && status}}">
+  <image src="{{photo}}" style='margin:75rpx;width:600rpx'></image>
+  <view style='display:flex;'>
+    <button style='font-size:14px' catchtap='turnOnCamera'>重拍</button>
+    <button style='font-size:14px' catchtap='save'>保存</button>
+  </view>
+</view>

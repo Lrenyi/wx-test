@@ -1,0 +1,4 @@
+<!--pages/code/code.wxml-->
+<view class="code">
+  <button class="code-btn" catchtap='scanCode'>扫一扫</button>
+</view>

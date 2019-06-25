@@ -1,0 +1,52 @@
+<!--pages/board/board.wxml-->
+<canvas
+  canvas-id="artboard"
+  style="width: {{screenWidth}}px"
+  bindtouchstart='startDraw'
+  bindtouchmove='handleTouchMove'
+></canvas>
+<view class='toolbar'>
+  <view class='colorbar'>
+    <view
+      wx:for="{{colors}}"
+      wx:key="item"
+      style="background-color: {{item}}"
+      class='color {{currentColor === item ? "current" : ""}}'
+      catchtap='changeColor'
+      data-color="{{item}}"
+    >
+      <image
+        wx:if="{{currentColor === item}}"
+        style="width: 30px; height: 30px;"
+        src='/icons/ok.png'>
+      </image>
+    </view>
+    <view
+      style="background-color: #FFF"
+      class='btn'
+      catchtap='cleanArtboard'
+    >
+    清除
+    </view>
+    <view
+      style="background-color: #FFF"
+      class='btn'
+      catchtap='saveCanvas'
+    >
+    保存
+    </view>
+  </view>
+  <view class='sliderbar'>
+    <slider
+      bindchange="changeStorkeWidth"
+      value="{{strokeWidth}}"
+      backgroundColor="#dedede"
+      activeColor="#f00"
+      block-size="24"
+      block-color="#F00"
+      min="1"
+      max="10"
+      show-value
+    />
+  </view>
+</view>

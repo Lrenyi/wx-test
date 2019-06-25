@@ -1,0 +1,9 @@
+/* pages/photo/photo.wxss */
+.photo{
+  margin-top: 50px;
+}
+.photo-btn{
+  width:600rpx;
+  font-size: 14px;
+  margin: 0 75rpx;
+}

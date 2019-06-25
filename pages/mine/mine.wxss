@@ -1,0 +1,45 @@
+/* pages/mine/mine.wxss */
+page{
+  height:100%;
+  background: #faf5f5
+}
+.userinfo{
+  height:120px;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  background: #fff;
+  overflow: hidden;
+}
+.user-text{
+  width:200rpx;
+  height:40px;
+  font-size: 20px;
+  color:#d82626;
+  line-height: 40px;
+  margin: 40px 10px;
+}
+.user-img{
+  width:120rpx;
+  height:120rpx;
+  color:#fff;
+  line-height: 120rpx;
+  margin: 30px 20px;
+  border-radius: 50%;
+  background: #dedede
+}
+.mine-list{
+  border-bottom: 1px solid #f0e9e9;
+  background: #fff;
+  font-size: 14px;
+  color:#d82626
+}
+.mine-list-first,.mine-list-last{
+  border:none;
+  margin: 10px 0;
+}
+navigator{
+  height:40px;
+  line-height: 40px;
+  padding:10px 20px;
+}

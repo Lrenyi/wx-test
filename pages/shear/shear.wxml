@@ -1,0 +1,18 @@
+<!--pages/shear/shear.wxml-->
+<view style='display:flex;margin:75rpx;font-size:14px'>
+  <view style='width:300rpx;font-size:14px;'><text>电话: {{phone}}</text></view>
+  多项功能：<view class="edit"><text catchtap="showActions">操作</text></view>
+</view>
+<view style='display:flex;margin:75rpx;font-size:14px'>
+  单项功能：
+  <button catchtap='makeCall'>拔号</button>
+  <button catchtap='copyPhoneNumber'>复制</button>
+  <button catchtap='addToContacts'>添加到联系人</button>
+</view>
+<view class='input-box'>
+  <view catchtap='setDataToView' 
+    class='toolbox' 
+    wx:if="{{isShowToolbox}}"
+  >粘贴 {{clipboardData}}</view>
+  <input bindlongtap='pasteData' value="{{inputValue}}" style='height:40px'></input>
+</view>

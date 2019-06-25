@@ -1,0 +1,64 @@
+/* pages/mall/mall.wxss */
+page {
+  height:100%;
+  display: flex;
+  overflow: hidden;
+}
+.aside{
+  width:220rpx;
+  background: #dedede;
+  overflow-y: auto;
+	overflow-x: hidden;
+}
+.menu-item{
+  font-size:14px; 
+  line-height: 30px;
+  padding: 5px;
+  margin-top:5px;
+  border-left: 2px solid transparent;
+}
+.menu-item.active{
+  border-left-color: #f00;
+}
+.main{
+  width:550rpx;
+}
+.main .list-item{
+  margin: 12px;
+  background-color: #fff;
+  width:219rpx;
+  height: 200px;
+  color: #000;
+  font-size: 12px;
+  float: left;
+  overflow: hidden;
+}
+.list-img{
+  width:100%;
+  height:100px;
+}
+.list-img.act{
+  width:100%;
+  height:100%;
+}
+.presentation{
+  width:100%;
+  height:100px;
+  font-size:12px;
+}
+.title{
+  height:40px;
+  overflow: hidden
+}
+.price{
+  height:20px;
+  margin:5px;
+  color:#f00;
+}
+.add-to-cart{
+  height:20px;
+  color:#fff;
+  background: #f00;
+  text-align: center;
+  margin:5px;
+}

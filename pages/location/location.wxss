@@ -1,0 +1,6 @@
+/* pages/location/location.wxss */
+page{
+  height:100%;
+  overflow: hidden;
+  background: #fce3e3;
+}

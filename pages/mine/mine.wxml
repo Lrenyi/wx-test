@@ -1,0 +1,36 @@
+<!--pages/mine/mine.wxml-->
+<view class="userinfo">
+    <view class="user-img">img</view>
+    <view class="user-text">用户信息</view>
+</view>
+<view class="mine-list mine-list-first">
+  <navigator
+  url="/pages/code/code"
+>扫一扫</navigator>
+</view>
+<view class="mine-list">
+  <navigator
+  url="/pages/shake/shake"
+>摇一摇</navigator>
+</view>
+<view class="mine-list">
+  <navigator
+  url="/pages/board/board"
+>画板</navigator>
+</view>
+<view class="mine-list">
+  <navigator
+  url="/pages/location/location"
+>定位</navigator>
+</view>
+<view class="mine-list" style='border:none'>
+  <navigator
+  url="/pages/shear/shear"
+>其他</navigator>
+</view>
+<view class="mine-list mine-list-last">
+  <navigator
+  url="/pages/photo/photo"
+>拍照</navigator>
+</view>
+

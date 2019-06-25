@@ -1,0 +1,36 @@
+<!--pages/mall/mall.wxml-->
+<view class="aside">
+  <view
+    class="menu-item {{currentTab === item.id ? 'active' : ''}}"
+    wx:for="{{menus}}"  
+    data-tab="{{item.id}}"
+    data-title="{{item.name}}"
+    wx:key="{{item.id}}"
+    catchtap="handleCateChange">
+    {{item.name}}
+  </view>
+</view>
+<scroll-view 
+  class="main" 
+  scroll-y
+  bindscrolltolower="loadMore"
+  scroll-top="{{scrollTop}}"
+  >
+  <navigator
+    wx:for="{{list}}"
+    url="/pages/detail/detail?id={{item.id}}"
+    wx:key="{{item.id}}"
+    class="list-item"
+  >
+    <image class="list-img {{ !item.title ? 'act' : ''}}" src='{{item.image}}'></image>
+    <view class="presentation" wx:if="{{item.title}}">
+        <view class="title" >{{item.title}}</view>
+        <view class="price" >￥{{item.price}}元</view>
+        <view 
+          class="add-to-cart" 
+          data-id="{{item.id}}"
+          catchtap='addToCart'
+        >加入购物车</view>
+    </view>
+  </navigator>
+</scroll-view>

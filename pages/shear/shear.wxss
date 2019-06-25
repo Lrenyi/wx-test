@@ -1,0 +1,35 @@
+/* pages/shear/shear.wxss */
+.edit{
+  width:150rpx;
+  height:30px;
+  text-align: center;
+  line-height: 30px;
+  font-size:14px;
+  color:#fff;
+  border-radius: 4px;
+  background: #15caca;
+}
+button{
+  color:#fff;
+  font-size: 14px;
+  background: #15caca;
+}
+.input-box {
+  height: 40px;
+  width: 600rpx;
+  margin:0 75rpx;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  position: relative
+}
+.toolbox {
+  position: absolute;
+  left: 30rpx;
+  top: -30px;
+  height: 20px;
+  font-size: 12px;
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 0 0 5px #666;
+  border-radius: 3px;
+}
